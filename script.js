@@ -1,5 +1,5 @@
 // تاريخ بداية علاقتكما (يمكنك تغيير هذا التاريخ)
-const startDate = new Date('2024-06-20T07:22:00');
+const startDate = new Date('2024-06-20T00:00:00');
 
 function updateCountdown() {
     const now = new Date();
@@ -21,3 +21,9 @@ setInterval(updateCountdown, 1000);
 
 // استدعاء الوظيفة عند تحميل الصفحة لأول مرة
 updateCountdown();
+
+
+// الكود الجديد للزر
+document.getElementById('apologyBtn').addEventListener('click', function() {
+    document.getElementById('apologyMessage').textContent = 'I Miss U';
+});
