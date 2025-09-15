@@ -123,10 +123,10 @@ h2 {
     text-align: center;
 }
 
-/* Bold text inside captions (new addition) */
+/* Bold text inside captions */
 .photo-caption strong {
     font-weight: bold;
-    color: #444; /* يمكنك تغيير اللون لإبرازه أكثر */
+    color: #444;
 }
 
 /* Dates Section */
@@ -150,6 +150,39 @@ h2 {
     font-weight: bold;
     color: var(--dark-pink);
     margin-right: 0.5rem;
+}
+
+/* New button style */
+#apologyBtn {
+    background: linear-gradient(45deg, var(--dark-pink), var(--primary-pink));
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-transform: uppercase;
+}
+
+#apologyBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#apologyBtn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#apologyMessage {
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: var(--dark-pink);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px var(--secondary-pink);
 }
 
 /* Media Queries for Responsiveness */
